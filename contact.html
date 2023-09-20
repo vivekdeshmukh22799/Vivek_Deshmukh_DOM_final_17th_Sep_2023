@@ -19,7 +19,7 @@
 
 <body>
 
- <!-- Nav Section -->
+  <!-- Nav Section -->
   <div class="nav">
     <div class="container">
       <div class="nav__wrapper">
@@ -44,7 +44,7 @@
                 class="feather feather-x">
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
-              </svg> 
+              </svg>
             </div>
 
             <div class="nav__list__wrapper">
@@ -114,7 +114,7 @@
         Contact & Inquiry
       </h3>
       <div class="form__wrapper">
-        <form name="contact" method="POST" netlify>
+        <form action="./index.html" method="GET" id="contactform" name="contact" method="POST" netlify>
           <div class="form__group">
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" name="First Name" required>
@@ -135,7 +135,7 @@
             <label for="message">Message</label>
             <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
           </div>
-          <button type="submit" class="btn primary-btn">Send</button>
+          <button onclick="ContactUs()" type="submit" class="btn primary-btn">Send</button>
         </form>
       </div>
     </div>
@@ -143,99 +143,99 @@
   <!-- End Contact Form Section-->
 
 
- <!-- Footer -->
- <footer>
-  <div class="container">
-    <div class="footer__wrapper">
-      <div class="footer__col1">
-        <div class="footer__logo">
-          <img src="./images/logo1.png" alt="Vivek's Restaurant">
-        </div>
-        <p class="footer__desc">
-          Fresh and delicious traditional "Maharashtra" food to delight the whole family.
-        </p>
-        <div class="footer__socials">
-          <h4 class="footer__socials__title">Follow us</h4>
-          <ol class="footer__socials__list">
-            <li>
-              <a href="https://www.facebook.com/vivek.deshmukh.9250">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-facebook">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/vivek.r.deshmukh/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                  class="feather feather-instagram">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </a>
-            </li>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__col1">
+          <div class="footer__logo">
+            <img src="./images/logo1.png" alt="Vivek's Restaurant">
+          </div>
+          <p class="footer__desc">
+            Fresh and delicious traditional "Maharashtra" food to delight the whole family.
+          </p>
+          <div class="footer__socials">
+            <h4 class="footer__socials__title">Follow us</h4>
+            <ol class="footer__socials__list">
+              <li>
+                <a href="https://www.facebook.com/vivek.deshmukh.9250">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/vivek.r.deshmukh/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+              </li>
 
+            </ol>
+          </div>
+        </div>
+
+        <div class="footer__col2">
+          <h3 class="footer__text__title">
+            Links
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./menu.html">Menu</a>
+            </li>
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html">contact Us</a>
+            </li>
+            <li>
+              <a href="./logORsign.html">Login</a>
+            </li>
+            <li>
+              <a href="./userProfile.html">Profile</a>
+            </li>
+            <li>
+              <a href="./booking.html">Book Table</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="footer__col4">
+          <h3 class="footer__text__title">
+            Contact
+          </h3>
+          <ol class="footer__text">
+            <li>
+              <a href="#">+919145103615</a>
+            </li>
+            <li>
+              <a href="#">vivekdeshmukh22799@gmail.com</a>
+            </li>
+            <li>
+              <a href="#">Address : 444503 Washim, Maharashtra, Bharat</a>
+            </li>
           </ol>
         </div>
       </div>
-
-      <div class="footer__col2">
-        <h3 class="footer__text__title">
-          Links
-        </h3>
-        <ol class="footer__text">
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./menu.html">Menu</a>
-          </li>
-          <li>
-            <a href="./about.html">About Us</a>
-          </li>
-          <li>
-            <a href="./contact.html">contact Us</a>
-          </li>
-          <li>
-            <a href="./logORsign.html">Login</a>
-          </li>
-          <li>
-            <a href="./userProfile.html">Profile</a>
-          </li>
-          <li>
-            <a href="./booking.html">Book Table</a>
-          </li>
-        </ol>
-      </div>
-
-      <div class="footer__col4">
-        <h3 class="footer__text__title">
-          Contact
-        </h3>
-        <ol class="footer__text">
-          <li>
-            <a href="#">+919145103615</a>
-          </li>
-          <li>
-            <a href="#">vivekdeshmukh22799@gmail.com</a>
-          </li>
-          <li>
-            <a href="#">Address : 444503 Washim, Maharashtra, Bharat</a>
-          </li>
-        </ol>
-      </div>
     </div>
+  </footer>
+  <div id="copyright">
+
+    © copyright 2023 Vivek Deshmukh | All rights reserved
+
   </div>
-</footer>
-<div id="copyright">
-
-  © copyright 2023 Vivek Deshmukh | All rights reserved
-
-</div>
-<!-- End Footer -->
+  <!-- End Footer -->
 
 
   <!-- aos script -->

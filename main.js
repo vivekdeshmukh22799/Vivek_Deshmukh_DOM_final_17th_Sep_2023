@@ -4,20 +4,20 @@ const navIconEl = document.querySelector('.nav__icon');
 const navBgOverlayEl = document.querySelector('.nav__bgOverlay');
 
 
-window.addEventListener('DOMContentLoaded', () =>{
+window.addEventListener('DOMContentLoaded', () => {
   document.body.style.visibility = 'visible';
 });
 
 const navOpen = () => {
-   navList.classList.add('show');
+  navList.classList.add('show');
   navBgOverlayEl.classList.add('active');
-  document.body.style= 'visibility: visible; height: 100vh; width:100vw; overflow:hidden;';
+  document.body.style = 'visibility: visible; height: 100vh; width:100vw; overflow:hidden;';
 }
 
 const navClose = () => {
   navList.classList.remove('show');
   navBgOverlayEl.classList.remove('active');
-  document.body.style= 'visibility: visible; height: initial; width: 100%; overflow-x: hidden;';
+  document.body.style = 'visibility: visible; height: initial; width: 100%; overflow-x: hidden;';
 }
 
 navIconEl.addEventListener('click', navOpen);
@@ -39,14 +39,29 @@ AOS.init({
 });
 
 const dishGridEl = Array.from(document.querySelectorAll('#dishGrid'));
-if (dishGridEl.length > 0){
+if (dishGridEl.length > 0) {
   // console.log(dishGridEl)
   dishGridEl.forEach(item => {
     item.setAttribute('data-aos', 'fade-up');
   })
 }
 
-function ShowMessage() {
-  let msg = document.getElementById('Message');
-  message.innerHTML = "Your details has been submited";
+// function ShowMessage() {
+//   let msg = document.getElementById('Message');
+//   message.innerHTML = "Your details has been submited";
+// }
+
+
+////Reservation Page alert message 
+function reservation() {
+  document.getElementById('bookingform').addEventListener('submit', function () {
+    alert("Your Reservation Successfully Done..!")
+  })
+}
+
+////Contact  Page alert message 
+function contact() {
+  document.getElementById('contactform').addEventListener('submit', function () {
+    alert("We got your inquiry, we will contact you soon!")
+  })
 }
